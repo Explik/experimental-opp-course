@@ -12,7 +12,7 @@ class Person
 ```
 
 **1A)** Rewrite the private fields into public properties, add initial values and add validation. 
-
+```
 Initial values: 
 - FirstName should be initialised as “Unknown”
 - LastName should be initialised as “Unknown”
@@ -24,10 +24,11 @@ Validation criteria:
 - FirstName & LastName cannot be longer than 100 characters 
 - Age cannot be negative
 
-- Do not change property value if criteria are not fulfilled 
+Do not change property value if criteria are not fulfilled 
+```
 
 **1B)** Add the properties Mother and Father to Person, each with the same properties as their child, and add validation. 
-
+```
 Initial values: 
 - Mother should be initialized as null
 - Father should be initialized as null
@@ -36,7 +37,7 @@ Validation criterion:
 - Mother & Father cannot be younger than the person self
 
 Do not change property value if criteria are not fulfilled 
-
+```
 **1C)** Add a method GeneratePerson to PersonGenerator. This method should return a new Person with the first name Adam, last name Smith and age 36.  
 
 **1D)** Add a method GenerateFamily to PersonGenerator. This method should return a person with the family tree below. *Hint: Association*
@@ -68,12 +69,12 @@ class Number
 **2B)** Add a constructor to Number, which requires you to assign Value before the construction of a new Number. 
 
 **2C)** Add the methods below to the Number objects, which all take another Number and store the result in the original Value. *Hint: Mutable object*
-
+```
 Methods: 
 - Add (+)
 - Subtract (-)
 - Multiply (*)
-
+```
 ## Exercise 3
 A simple (immutable) Number class has been provided.
 ```C#
@@ -88,12 +89,12 @@ class ImmutableNumber
 **3B)** Add a new constructor to Number, which requires you to assign Value on the creation of a new Number. 
 
 **3C)** Add the methods below to the Number objects, which all take another Number and store the result in the value of a new Number. *Hint: Immutable object*
-
+```
 Methods: 
 - Add (+)
 - Subtract (-)
 - Multiply (*)
-
+```
 ## Exercise 4
 Lookup the difference between a value type and a reference type. 
 
