@@ -3,6 +3,8 @@ The experimental OOP course is a set of self-evaluating exercises, which have be
 
 [Lecture 2](./Lecture%202/Lecture%202%20Exercises.md)
 
+*Additional lectures comming soon...* 
+
 ## Setup
 In order to make sure that the system works correctly, and that you can receive update please do the following: 
 1. [Create a fork for this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
