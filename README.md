@@ -10,7 +10,7 @@ In order to make sure that the system works correctly, and that you can receive 
 5. Change the Test Explorer 'Group By' setting to to Project(1), Class(2), Traits(3)  
 
 ## Use 
-![layout of tests](./Docs/test-layout.png)
+![layout of tests](./Assets/test-layout.png)
 
 To receive feedback on your exercise solutions, click the Test Explorer 'Run All Test Tests In View' button.
 
