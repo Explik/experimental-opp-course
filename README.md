@@ -1,5 +1,9 @@
 # Experimental OOP course 
-The experimental OOP course is a set of self-evaluating exercises, which have been adapted from an OOP course taught at Aalborg University.
+The experimental OOP course is a set of self-evaluating exercises, which have been adapted from an OOP course taught at Aalborg University. The exercises are divided into individual lectures that are listed below.
+
+[Lecture 2](./Lecture%202/Lecture%202%20Exercises.md)
+
+*Additional lectures comming soon...* 
 
 ## Setup
 In order to make sure that the system works correctly, and that you can receive update please do the following: 
@@ -10,7 +14,7 @@ In order to make sure that the system works correctly, and that you can receive 
 5. Change the Test Explorer 'Group By' setting to to Project(1), Class(2), Traits(3)  
 
 ## Use 
-![layout of tests](./Docs/test-layout.png)
+![layout of tests](./Assets/test-layout.png)
 
 To receive feedback on your exercise solutions, click the Test Explorer 'Run All Test Tests In View' button.
 
