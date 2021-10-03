@@ -8,11 +8,11 @@ The experimental OOP course is a set of self-evaluating exercises, which have be
 ## Setup
 In order to make sure that the system works correctly, and that you can receive update please do the following: 
 1. [Install Visual studio 2019](https://visualstudio.microsoft.com/downloads/)
-2. [Install .NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+2. [Install the .NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 3. [Create a fork for this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 4. [Clone *your* forked repository with Visual Studio](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo-visual-studio-2019) 
 5. Open the .sln-file of the relevant lecture. For example, open Lecture 2/Lecture 2.sln
-6. [Install latest version of Explik.StructuralTestTools.MSBuild](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+6. [Install latest Explik.StructuralTestTools.MSBuild nuget package](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 7. [Open the Test Explorer in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019)
 8. Change the Test Explorer 'Group By' setting to to Project(1), Class(2), Traits(3)  
 
