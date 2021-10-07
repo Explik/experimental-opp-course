@@ -1,4 +1,53 @@
 # Lecture 3 exercises
+## Exercise 1
+Explain, in your own words, the access modifiers: private, protected, and public. When would you use each? Which would you use by default? 
+
+**1a)** Replace the modifier placeholders with the most restrictive access modifier possible. 
+```C#
+abstract class Vehicle 
+{	
+	[modifier] static int _lastID;
+	
+	[modifier] Vehicle() 
+	{
+		ID = _lastID++;
+	}
+	
+	[modifier] int ID { get; }
+	[modifier] double FuelLevel { get; [modifier] set; }
+	
+	[modifier] abstract void Refill(double amount);
+}
+class Car : Vehicle {
+	[modifier] double _maxFuelLevel;
+	
+	[modifier] Car(double maxFuelLevel) : base() 
+	{
+		_maxFuelLevel = maxFuelLevel;
+	}
+	
+	[modifier] override void Refill(double amount) 
+	{
+		if (FuelLevel + amount <= _maxFuelLevel)
+			FuelLevel += amount;
+		else FuelLevel = _maxFuelLevel;
+	}
+}
+class Program {
+	public static void Main()
+	{
+		Car car = new Car(35.00); 
+		Car car = new Car(35.00);
+            Console.Write($"Refueling car with ID {car.ID} from fuel level {car.FuelLevel}");
+            car.Refill(50);
+            Console.WriteLine($" to fuel level {car.FuelLevel}");
+	}
+}
+```
+
+Note: [string interpolation in C#](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation)
+
+
 ## Exercise 2
 Create the classes Employee, Manager, and Company 
 
