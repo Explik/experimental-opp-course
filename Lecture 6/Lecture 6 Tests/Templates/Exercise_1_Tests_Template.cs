@@ -15,7 +15,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Temperature.Celcius is public double property"), TestCategory("Exercise 1A")]
         public void TemperatureCelciusIsPublicDoubleProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Temperature, double>(t => t.Celcius);
             test.Execute();
@@ -24,7 +24,7 @@ namespace Lecture_6_Tests
         [TestMethod("b. Temperature.Fahrenheit is public double property"), TestCategory("Exercise 1A")]
         public void TemperatureFahrenheitIsPublicDoubleProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Temperature, double>(t => t.Fahrenheit);
             test.Execute();
@@ -33,7 +33,7 @@ namespace Lecture_6_Tests
         [TestMethod("c. Temperature.Kelvin is public double property"), TestCategory("Exercise 1A")]
         public void TemperatureKelvinIsPublicDoubleProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Temperature, double>(t => t.Kelvin);
             test.Execute();
@@ -87,7 +87,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Temperature implements IComparable"), TestCategory("Exercise 1B")]
         public void TemperatureImplementsIComparable()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<Temperature>(new TypeIsSubclassOfVerifier(typeof(IComparable)));
             test.Execute();

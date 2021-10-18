@@ -17,7 +17,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. CarListSorter.Comparer is a publuc IComparer<Car> property"), TestCategory("Exercise 5A")]
         public void CarListSorterComparerIsPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<CarSorter, IComparer<Car>>(c => c.Comparer);
             test.Execute();
@@ -37,7 +37,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. CarListSorter.Sort takes an array of cars"), TestCategory("Exercise 5B")]
         public void DieConstructorTakesIRandomAndInt()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<CarSorter, Car[]>((c1, c2) => c1.Sort(c2));
             test.Execute();

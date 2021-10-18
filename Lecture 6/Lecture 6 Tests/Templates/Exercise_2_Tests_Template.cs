@@ -16,7 +16,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Car.ID is public int property"), TestCategory("Exercise 2A")]
         public void CarIDIsPublicReadOnlyIntProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Car, int>(c => c.ID);
             test.Execute();
@@ -25,7 +25,7 @@ namespace Lecture_6_Tests
         [TestMethod("b. Car.Make is public string property"), TestCategory("Exercise 2A")]
         public void CarMakeIsPublicReadOnlyStringProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Car, string>(c => c.Make);
             test.Execute();
@@ -34,7 +34,7 @@ namespace Lecture_6_Tests
         [TestMethod("c. Car.Model is public string property"), TestCategory("Exercise 2A")]
         public void CarModelIsPublicReadOnlyStringProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Car, string>(c => c.Model);
             test.Execute();
@@ -43,7 +43,7 @@ namespace Lecture_6_Tests
         [TestMethod("d. Car.Price is public decimal property"), TestCategory("Exercise 2A")]
         public void CarPriceIsPublicDecimalReadOnlyProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Car, decimal>(c => c.Price);
             test.Execute();
@@ -70,7 +70,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Car implements IComparable"), TestCategory("Exercise 2B")]
         public void CarImplementsIcomparable()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<Car>(
                 new TypeAccessLevelVerifier(AccessLevels.Public),
@@ -101,7 +101,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. CarPriceComparer implements IComparer<Car>"), TestCategory("Exercise 2C")]
         public void CarPriceComparerImplementsIComparerCar()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<CarPriceComparer>(
                 new TypeAccessLevelVerifier(AccessLevels.Public),
@@ -145,7 +145,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. CarMakeModelPriceComparer implements IComparer<Car>"), TestCategory("Exercise 2D")]
         public void Test2E1()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<CarMakeModelPriceComparer>(
                 new TypeAccessLevelVerifier(AccessLevels.Public),

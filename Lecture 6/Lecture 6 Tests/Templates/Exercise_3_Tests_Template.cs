@@ -15,7 +15,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. IRandom is an interface"), TestCategory("Exercise 3A")]
         public void IRandomIsAnInterface()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertInterface<IRandom>();
             test.Execute();
@@ -24,7 +24,7 @@ namespace Lecture_6_Tests
         [TestMethod("b. IRandom.Next() is a method"), TestCategory("Exercise 3A")]
         public void IRandomNextOverloadTakesNothing()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertMethod<IRandom, int>(r => r.Next());
             test.Execute();
@@ -33,7 +33,7 @@ namespace Lecture_6_Tests
         [TestMethod("c. IRandom.Next(max) is a method"), TestCategory("Exercise 3A")]
         public void IRandomNextOverloadTakesInt()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertMethod<IRandom, int, int>((r, max) => r.Next(max));
             test.Execute();
@@ -42,7 +42,7 @@ namespace Lecture_6_Tests
         [TestMethod("d. IRandom.Next(min, max) is a method"), TestCategory("Exercise 3A")]
         public void IRandomNextOverlaodTakes2Ints()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertMethod<IRandom, int, int, int>((r, min, max) => r.Next(min, max));
             test.Execute();
@@ -55,7 +55,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. MyRandom implements IRandom"), TestCategory("Exercise 3B")]
         public void MyRandomImplementsIRandom()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<MyRandom>(new TypeIsSubclassOfVerifier(typeof(IRandom)));
             test.Execute();
@@ -92,7 +92,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. PredictableRandom implements IRandom"), TestCategory("Exercise 3C")]
         public void PredictableRandomImplementsIRandom()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<PredictableRandom>(new TypeIsSubclassOfVerifier(typeof(IRandom)));
             test.Execute();

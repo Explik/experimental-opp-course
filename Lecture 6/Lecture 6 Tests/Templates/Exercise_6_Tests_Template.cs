@@ -16,7 +16,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. ILogger is an interface"), TestCategory("Exercise 6A")]
         public void ILoggerIsAnInterface()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertInterface<ILogger>();
             test.Execute();
@@ -25,7 +25,7 @@ namespace Lecture_6_Tests
         [TestMethod("b. ILogger.Log(string message) is a method"), TestCategory("Exercise 6A")]
         public void ILoggerLogIsAMehthod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<ILogger, string>((l, s) => l.Log(s));
             test.Execute();
@@ -38,7 +38,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. FileLogger's constructor takes string"), TestCategory("Exercise 6B")]
         public void DieConstructorTakesIRandomAndInt()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicConstructor<string, ILogger>(s => new FileLogger(s));
             test.Execute();
@@ -51,7 +51,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. FileLogger implements ILogger"), TestCategory("Exercise 6C")]
         public void FileLoggerImplementILogger()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<FileLogger>(
                 new TypeAccessLevelVerifier(AccessLevels.Public),
@@ -66,7 +66,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. FileLogger implements IDisposable"), TestCategory("Exercise 6D")]
         public void FileLoggerImplementIDisposable()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<FileLogger>(
                 new TypeAccessLevelVerifier(AccessLevels.Public),

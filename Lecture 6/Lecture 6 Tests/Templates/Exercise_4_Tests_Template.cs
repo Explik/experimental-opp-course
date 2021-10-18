@@ -14,7 +14,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Die constructor takes IRandom"), TestCategory("Exercise 4A")]
         public void DieConstructorTakesIRandom()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicConstructor<IRandom, Die>(r => new Die(r));
             test.Execute();
@@ -27,7 +27,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. Die constructor takes IRandom and int"), TestCategory("Exercise 4B")]
         public void DieConstructorTakesIRandomAndInt()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicConstructor<IRandom, int, Die>((r, s) => new Die(r, s));
             test.Execute();

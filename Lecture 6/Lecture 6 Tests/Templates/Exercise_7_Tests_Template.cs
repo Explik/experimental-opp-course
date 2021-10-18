@@ -16,7 +16,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. TextFile constructor takes string"), TestCategory("Exercise 7A")]
         public void TextFileConstructorTakesString()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicConstructor<string, TextFile>(s => new TextFile(s));
             test.Execute();
@@ -29,7 +29,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. TestFile.Content is public read-only string"), TestCategory("Exercise 7B")]
         public void TestFileContentIsPublicReadOnlyString()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicReadonlyProperty<TextFile, string>(t => t.Content);
             test.Execute();
@@ -57,7 +57,7 @@ namespace Lecture_6_Tests
         [TestMethod("a. TextFile implements IDisposable"), TestCategory("Exercise 7C")]
         public void TextFileImplementsIDisposable()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertClass<TextFile>(new TypeIsSubclassOfVerifier(typeof(IDisposable)));
             test.Execute();
