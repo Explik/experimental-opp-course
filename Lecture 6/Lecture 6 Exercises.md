@@ -73,7 +73,9 @@ Explain, in your own words, dependency injection through properties.
 **5B)** Add a method Sort, which sorts a list with the Comparer. If the Comparer is null, the list should be left unchanged.
   
 # Rehearsal of Lecture 4
-  
+
+## Exercise 6
+    
 Explain why it could be beneficial to add a logger interface as opposed to writing directly to file or console.
   
 **6A)** Create an interface with a void method Log(string message) to ILogger.
