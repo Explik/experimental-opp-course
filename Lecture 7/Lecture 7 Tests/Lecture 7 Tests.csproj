@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Lecture_7_Tests</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Explik.StructuralTestTools.Core" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- Adds TestTools as source generator -->
+  <ItemGroup>
+    <AdditionalFiles Include="TestToolsConfig.xml" UnitTestGenerator_IsConfig="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lecture 7 Exercises\Lecture 7 Exercises.csproj" />
+    <ProjectReference Include="..\Lecture 7 Solutions\Lecture 7 Solutions.csproj" />
+  </ItemGroup>
+
+</Project>
