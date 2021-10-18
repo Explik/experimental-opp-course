@@ -7,6 +7,8 @@ The experimental OOP course is a set of self-evaluating exercises, which have be
 
 [Lecture 4](./Lecture%204/Lecture%204%20Exercises.md)
 
+[Lecture 6](./Lecture%206/Lecture%206%20Exercises.md)
+
 *Additional lectures comming soon...* 
 
 ## Setup
