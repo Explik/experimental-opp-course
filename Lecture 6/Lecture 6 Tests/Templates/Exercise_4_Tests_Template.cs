@@ -10,6 +10,7 @@ namespace Lecture_6_Tests
     public class Exercise_4_Tests_Template
     {
         #region Exercise 4A
+
         [TestMethod("a. Die constructor takes IRandom"), TestCategory("Exercise 4A")]
         public void DieConstructorTakesIRandom()
         {
@@ -18,9 +19,11 @@ namespace Lecture_6_Tests
             test.AssertPublicConstructor<IRandom, Die>(r => new Die(r));
             test.Execute();
         }
-        #endregion
+
+        #endregion Exercise 4A
 
         #region Exercise 4B
+
         [TestMethod("a. Die constructor takes IRandom and int"), TestCategory("Exercise 4B")]
         public void DieConstructorTakesIRandomAndInt()
         {
@@ -29,9 +32,11 @@ namespace Lecture_6_Tests
             test.AssertPublicConstructor<IRandom, int, Die>((r, s) => new Die(r, s));
             test.Execute();
         }
-        #endregion
+
+        #endregion Exercise 4B
 
         #region Exercise 4C
+
         [TemplatedTestMethod("a. Die.Roll returns 5 if constructed PredictablyRandom(5)"), TestCategory("Exercise 4C")]
         public void DieRollReturns5()
         {
@@ -51,6 +56,7 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(1 <= value && value <= 6);
         }
-        #endregion
+
+        #endregion Exercise 4C
     }
 }

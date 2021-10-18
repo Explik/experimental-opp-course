@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lecture_1_Potential_Solutions
+﻿namespace Lecture_6_Solutions
 {
     public class Program
     {

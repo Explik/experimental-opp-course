@@ -11,6 +11,7 @@ namespace Lecture_6_Tests
     public class Exercise_1_Tests_Template
     {
         #region Exercise 1A
+
         [TestMethod("a. Temperature.Celcius is public double property"), TestCategory("Exercise 1A")]
         public void TemperatureCelciusIsPublicDoubleProperty()
         {
@@ -78,9 +79,11 @@ namespace Lecture_6_Tests
 
             Assert.AreEqual(0.0, temperature.Kelvin, 0.001);
         }
-        #endregion
+
+        #endregion Exercise 1A
 
         #region Exercise 1B
+
         [TestMethod("a. Temperature implements IComparable"), TestCategory("Exercise 1B")]
         public void TemperatureImplementsIComparable()
         {
@@ -114,6 +117,7 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(temperature1.CompareTo(temperature2) == 0);
         }
-        #endregion
+
+        #endregion Exercise 1B
     }
 }

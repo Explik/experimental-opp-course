@@ -12,6 +12,7 @@ namespace Lecture_6_Tests
     public class Exercise_2_Tests_Template
     {
         #region Exercise 2A
+
         [TestMethod("a. Car.ID is public int property"), TestCategory("Exercise 2A")]
         public void CarIDIsPublicReadOnlyIntProperty()
         {
@@ -61,9 +62,11 @@ namespace Lecture_6_Tests
             Car car = new Car();
             Assert.ThrowsException<ArgumentException>(() => car.Price = -1M);
         }
-        #endregion
+
+        #endregion Exercise 2A
 
         #region Exercise 2B
+
         [TestMethod("a. Car implements IComparable"), TestCategory("Exercise 2B")]
         public void CarImplementsIcomparable()
         {
@@ -90,9 +93,11 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(car2.CompareTo(car1) > 0);
         }
-        #endregion
+
+        #endregion Exercise 2B
 
         #region Exercise 2C
+
         [TestMethod("a. CarPriceComparer implements IComparer<Car>"), TestCategory("Exercise 2C")]
         public void CarPriceComparerImplementsIComparerCar()
         {
@@ -132,9 +137,11 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(comparer.Compare(car1, car2) == 0);
         }
-        #endregion
+
+        #endregion Exercise 2C
 
         #region Exercise 2D
+
         [TestMethod("a. CarMakeModelPriceComparer implements IComparer<Car>"), TestCategory("Exercise 2D")]
         public void Test2E1()
         {
@@ -194,6 +201,7 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(comparer.Compare(car1, car2) == 0);
         }
-        #endregion
+
+        #endregion Exercise 2D
     }
 }

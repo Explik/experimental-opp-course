@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lecture_6_Solutions
 {
     public class PredictableRandom : IRandom
     {
-        int _value;
+        private int _value;
 
         public PredictableRandom(int value)
         {

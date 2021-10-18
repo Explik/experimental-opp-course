@@ -12,6 +12,7 @@ namespace Lecture_6_Tests
     public class Exercise_7_Tests_Template
     {
         #region Exercise 7A
+
         [TestMethod("a. TextFile constructor takes string"), TestCategory("Exercise 7A")]
         public void TextFileConstructorTakesString()
         {
@@ -20,9 +21,11 @@ namespace Lecture_6_Tests
             test.AssertPublicConstructor<string, TextFile>(s => new TextFile(s));
             test.Execute();
         }
-        #endregion
+
+        #endregion Exercise 7A
 
         #region Exercise 7B
+
         [TestMethod("a. TestFile.Content is public read-only string"), TestCategory("Exercise 7B")]
         public void TestFileContentIsPublicReadOnlyString()
         {
@@ -46,9 +49,11 @@ namespace Lecture_6_Tests
             Assert.AreEqual("content of file", file.Content);
             file.Dispose();
         }
-        #endregion
+
+        #endregion Exercise 7B
 
         #region Exercise 7C
+
         [TestMethod("a. TextFile implements IDisposable"), TestCategory("Exercise 7C")]
         public void TextFileImplementsIDisposable()
         {
@@ -69,6 +74,7 @@ namespace Lecture_6_Tests
 
             Assert.IsNull(file.Content);
         }
-        #endregion
+
+        #endregion Exercise 7C
     }
 }

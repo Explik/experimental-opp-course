@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace Lecture_6_Solutions
 {
     public class FileLogger : ILogger, IDisposable
     {
-        FileStream stream;
+        private FileStream stream;
 
         public FileLogger(string path)
         {

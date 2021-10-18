@@ -4,17 +4,18 @@ namespace Lecture_6_Solutions
 {
     public class Temperature : IComparable
     {
-        double _value;
+        private double _value;
 
         public double Celcius
         {
             get { return _value + 273.15; }
-            set {
+            set
+            {
                 double valueInKelvin = value + 273.15;
 
                 if (valueInKelvin < 0)
                     throw new ArgumentException($"Value {value}C is below absolute zero");
-                _value = valueInKelvin; 
+                _value = valueInKelvin;
             }
         }
 
@@ -34,10 +35,11 @@ namespace Lecture_6_Solutions
         public double Kelvin
         {
             get { return _value; }
-            set { 
+            set
+            {
                 if (value < 0)
                     throw new ArgumentException($"Value {value}K is below absolute zero");
-                _value = value; 
+                _value = value;
             }
         }
 

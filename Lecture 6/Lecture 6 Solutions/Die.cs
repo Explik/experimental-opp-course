@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lecture_6_Solutions
+﻿namespace Lecture_6_Solutions
 {
     public class Die
     {
-        int _numOfSides;
-        IRandom _random;
+        private int _numOfSides;
+        private IRandom _random;
 
         public Die(IRandom random) : this(random, 6)
         {

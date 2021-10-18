@@ -11,6 +11,7 @@ namespace Lecture_6_Tests
     public class Exercise_3_Tests_Template
     {
         #region Exercise 3A
+
         [TestMethod("a. IRandom is an interface"), TestCategory("Exercise 3A")]
         public void IRandomIsAnInterface()
         {
@@ -46,9 +47,11 @@ namespace Lecture_6_Tests
             test.AssertMethod<IRandom, int, int, int>((r, min, max) => r.Next(min, max));
             test.Execute();
         }
-        #endregion
+
+        #endregion Exercise 3A
 
         #region Exercise 3B
+
         [TestMethod("a. MyRandom implements IRandom"), TestCategory("Exercise 3B")]
         public void MyRandomImplementsIRandom()
         {
@@ -81,9 +84,11 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(1 <= value && value <= 6);
         }
-        #endregion
+
+        #endregion Exercise 3B
 
         #region Exercise 3C
+
         [TestMethod("a. PredictableRandom implements IRandom"), TestCategory("Exercise 3C")]
         public void PredictableRandomImplementsIRandom()
         {
@@ -127,6 +132,7 @@ namespace Lecture_6_Tests
             PredictableRandom random = new PredictableRandom(0);
             Assert.ThrowsException<ArgumentException>(() => random.Next(1, 6));
         }
-        #endregion
+
+        #endregion Exercise 3C
     }
 }

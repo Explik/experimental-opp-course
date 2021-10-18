@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -7,8 +6,8 @@ namespace Lecture_6_Solutions
 {
     public class TextFile : IDisposable
     {
-        bool _isDisposed = false;
-        StreamReader _reader;
+        private bool _isDisposed = false;
+        private StreamReader _reader;
 
         public TextFile(string path)
         {

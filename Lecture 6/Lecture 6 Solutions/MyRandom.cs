@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lecture_6_Solutions
 {
     public class MyRandom : IRandom
     {
-        Random random = new Random();
+        private Random random = new Random();
 
         public int Next()
         {

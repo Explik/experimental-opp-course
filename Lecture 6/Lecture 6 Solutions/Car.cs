@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lecture_6_Solutions
 {
     public class Car : IComparable
     {
-        int _id;
-        decimal _price;
+        private int _id;
+        private decimal _price;
 
-        public int ID { 
+        public int ID
+        {
             get { return _id; }
             set
             {
@@ -23,9 +22,11 @@ namespace Lecture_6_Solutions
 
         public string Model { get; set; }
 
-        public decimal Price {
+        public decimal Price
+        {
             get { return _price; }
-            set {
+            set
+            {
                 if (value < 0)
                     throw new ArgumentException();
                 _price = value;

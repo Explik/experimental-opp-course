@@ -13,6 +13,7 @@ namespace Lecture_6_Tests
     public class Exercise_5_Tests_Template
     {
         #region Exercise 5A
+
         [TestMethod("a. CarListSorter.Comparer is a publuc IComparer<Car> property"), TestCategory("Exercise 5A")]
         public void CarListSorterComparerIsPublicProperty()
         {
@@ -28,9 +29,11 @@ namespace Lecture_6_Tests
             CarSorter sorter = new CarSorter();
             Assert.IsNull(sorter.Comparer);
         }
-        #endregion
+
+        #endregion Exercise 5A
 
         #region Exercise 5B
+
         [TestMethod("a. CarListSorter.Sort takes an array of cars"), TestCategory("Exercise 5B")]
         public void DieConstructorTakesIRandomAndInt()
         {
@@ -59,7 +62,7 @@ namespace Lecture_6_Tests
         [TemplatedTestMethod("c. CarListSorter.Sort sorts according to price if Comparer = new CarPriceComparer()"), TestCategory("Exercise 5B")]
         public void CarListSorterSorts()
         {
-            CarSorter sorter = new CarSorter() 
+            CarSorter sorter = new CarSorter()
             {
                 Comparer = new CarPriceComparer()
             };
@@ -74,6 +77,7 @@ namespace Lecture_6_Tests
 
             Assert.IsTrue(cars.Select(c => c.ID).SequenceEqual(new[] { 2, 0, 1 }));
         }
-        #endregion
+
+        #endregion Exercise 5B
     }
 }
