@@ -14,7 +14,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. Customer.ID is a public property"), TestCategory("Exercise 5A")]
         public void CustomerIDIsAPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Customer, int>(c => c.ID);
             test.Execute();
@@ -23,7 +23,7 @@ namespace Lecture_8_Tests
         [TestMethod("b. Customer.FirstName is a public property"), TestCategory("Exercise 5A")]
         public void CustomerFirstNameIsAPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Customer, string>(c => c.FirstName);
             test.Execute();
@@ -32,7 +32,7 @@ namespace Lecture_8_Tests
         [TestMethod("c. Customer.LastName is a public property"), TestCategory("Exercise 5A")]
         public void CustomerLastNameIsAPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<Customer, string>(c => c.LastName);
             test.Execute();

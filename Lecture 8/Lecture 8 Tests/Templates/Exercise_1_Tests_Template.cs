@@ -16,7 +16,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. ArrayHelper is an static class"), TestCategory("Exercise 1B")]
         public void ArrayHelperIsAnStaticClass()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertType(typeof(ArrayHelper), new TypeIsStaticVerifier());
             test.Execute();
@@ -25,7 +25,7 @@ namespace Lecture_8_Tests
         [TestMethod("b. ArrayHelper.Filter<T>(T[] array, Predicate<T> p) is a public method"), TestCategory("Exercise 1B")]
         public void ArrayHelperFilterIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertStaticMethod<int[], Predicate<int>, int[]>(
                 (array, p) => ArrayHelper.Filter(array, p),
@@ -37,7 +37,7 @@ namespace Lecture_8_Tests
         [TestMethod("c. ArrayHelper.Map<T1, T2>(T1[] array, Func<T1, T2> f) is a public method"), TestCategory("Exercise 1B")]
         public void ArrayHelperMapIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertStaticMethod<int[], Func<int, double>, double[]>(
                 (array, f) => ArrayHelper.Map(array, f),
@@ -49,7 +49,7 @@ namespace Lecture_8_Tests
         [TestMethod("d. ArrayHelper.Sort<T>(T[] array, Func<T, T, int> f) is a public method"), TestCategory("Exercise 1B")]
         public void ArrayHelperSortIsPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertStaticMethod<string[], Func<string, string, int>>(
                 (array, c) => ArrayHelper.Sort(array, c),
@@ -61,7 +61,7 @@ namespace Lecture_8_Tests
         [TestMethod("e. ArrayHelper.Find<T>(T[] array, Predicate<T> p) is a public method"), TestCategory("Exercise 1B")]
         public void ArrayHelperFindIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertStaticMethod<int[], Predicate<int>, int>(
                 (array, p) => ArrayHelper.Find(array, p),
@@ -73,7 +73,7 @@ namespace Lecture_8_Tests
         [TestMethod("f. ArrayHelper.Contains<T>(T[] array, Predicate<T> p) is a public method"), TestCategory("Exercise 1B")]
         public void ArrayContainsIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertStaticMethod<int[], Predicate<int>, bool>(
                 (array, c) => ArrayHelper.Contains(array, c),

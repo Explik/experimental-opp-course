@@ -15,7 +15,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. ConsoleView.Run() is a public method"), TestCategory("Exercise 3A")]
         public void ConsoleViewRunIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<ConsoleView>(v => v.Run());
             test.Execute();
@@ -39,7 +39,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. InputHandler is public delegate"), TestCategory("Exercise 3B")]
         public void InputHandlerIsPublicDelegate()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicDelegate<InputHandler, Action<string>>();
             test.Execute();
@@ -52,7 +52,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. ConsoleView.Input is public event"), TestCategory("Exercise 3C")]
         public void ConsoleViewInputIsPublicEvent()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertEvent(
                 typeof(ConsoleView).GetEvent("Input"),

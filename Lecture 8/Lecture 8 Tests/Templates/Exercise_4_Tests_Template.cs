@@ -15,7 +15,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. ConsoleController.HandleInput(string input) is a public method"), TestCategory("Exercise 4B")]
         public void ConsoleViewRunIsAPublicMethod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<ConsoleController, string>((c, s) => c.HandleInput(s));
             test.Execute();
@@ -81,7 +81,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. ConsoleController.AddCommand(string name, Action<string> action) is a public method"), TestCategory("Exercise 4C")]
         public void ConsoleControllerAddCommand()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<ConsoleController, string, Action<string>>((c, s, a) => c.AddCommand(s, a));
             test.Execute();
@@ -106,7 +106,7 @@ namespace Lecture_8_Tests
 
         public void ConsoleControllerRemoveCommand()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<ConsoleController, string>((c, s) => c.RemoveCommand(s));
             test.Execute();

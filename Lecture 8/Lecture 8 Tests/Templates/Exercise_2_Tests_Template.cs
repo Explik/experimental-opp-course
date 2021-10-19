@@ -15,7 +15,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. BankAccount.Balance is a public read-only Balance"), TestCategory("Exercise 2A")]
         public void BankAccountBalanceIsAPublicReadonlyBalance()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicReadonlyProperty<BankAccount, decimal>(b => b.Balance);
             test.Execute();
@@ -35,7 +35,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. BankAccount.LowBalanceThreshold is a public property"), TestCategory("Exercise 2B")]
         public void BankAccountLowBalanceThresholdsIsAPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<BankAccount, decimal>(b => b.LowBalanceThreshold);
             test.Execute();
@@ -44,7 +44,7 @@ namespace Lecture_8_Tests
         [TestMethod("b. BankAccount.HighBalanceThreshold is a public property"), TestCategory("Exercise 2B")]
         public void BankAccountHighBalanceThresholdsIsAPublicProperty()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicProperty<BankAccount, decimal>(b => b.HighBalanceThreshold);
             test.Execute();
@@ -77,7 +77,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. BankAccount.Deposit(decimal amount) is a public method"), TestCategory("Exercise 2C")]
         public void BankAccountDepositIsAPublicMehtod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<BankAccount, decimal>((b, d) => b.Deposit(d));
             test.Execute();
@@ -86,7 +86,7 @@ namespace Lecture_8_Tests
         [TestMethod("b. BankAccount.Withdraw(decimal amount) is a public method"), TestCategory("Exercise 2C")]
         public void BankAccountWithdrawIsAPublicMehtod()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicMethod<BankAccount, decimal>((b, d) => b.Withdraw(d));
             test.Execute();
@@ -119,7 +119,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. BalanceChangedHandler is public delegate"), TestCategory("Exercise 2D")]
         public void BalanceChangeHandlerIsPublicDelegate()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertPublicDelegate<BalanceChangeHandler, Action<decimal>>();
             test.Execute();
@@ -132,7 +132,7 @@ namespace Lecture_8_Tests
         [TestMethod("a. BankAccount.LowBalance is public event"), TestCategory("Exercise 2E")]
         public void BankAccountMinEventIsPublicEvent()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertEvent(
                 typeof(BankAccount).GetEvent("LowBalance"),
@@ -144,7 +144,7 @@ namespace Lecture_8_Tests
         [TestMethod("b. BankAccount.HighBalance is public event"), TestCategory("Exercise 2E")]
         public void BankAccountHighBalanceMinEvent()
         {
-            // TestTools Code
+            // This code is specific to StructuralTestTools
             StructureTest test = Factory.CreateStructureTest();
             test.AssertEvent(
                 typeof(BankAccount).GetEvent("HighBalance"),
